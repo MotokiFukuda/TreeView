@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+  <constant name="struts.devMode" value="true" />
+  <package name="master" extends="struts-default" namespace="/">
+    <!-- ログイン画面 -->
+    <action name="login" class="com.rental.treedvd.action.LoginAction"
+      method="execute">
+      <result name="success">main.jsp</result>
+      <result name="error">error.jsp</result>
+    </action>
+
+    <!-- メイン画面 -->
+    <action name="tree_view" class="com.rental.treedvd.action.TreeViewAction"
+      method="execute">
+      <interceptor-ref name="defaultStack" />
+      <interceptor-ref name="store">
+        <param name="operationMode">RETRIEVE</param>
+      </interceptor-ref>
+      <result name="success">tree_view.jsp</result>
+      <result name="error">error.jsp</result>
+    </action>
+
+    <action name="edit" class="com.rental.treedvd.action.TreeViewAction"
+      method="edit">
+      <interceptor-ref name="store">
+        <param name="operationMode">STORE</param>
+      </interceptor-ref>
+      <interceptor-ref name="defaultStack" />
+      <result name="input" type="redirectAction">
+        <param name="actionName">tree_view</param>
+        <param name="vid">${vid}</param>
+        <param name="id">${id}</param>
+        <param name="pid">${pid}</param>
+        <param name="level">${level}</param>
+      </result>
+      <result name="success" type="redirectAction">
+        <param name="actionName">tree_view</param>
+        <param name="id">${id}</param>
+        <param name="pid">${pid}</param>
+        <param name="level">${level}</param>
+      </result>
+    </action>
+
+
+    <action name="add" class="com.rental.treedvd.action.TreeViewAction"
+      method="add">
+      <interceptor-ref name="store">
+        <param name="operationMode">STORE</param>
+      </interceptor-ref>
+      <interceptor-ref name="defaultStack" />
+      <result name="input" type="redirectAction">
+        <param name="actionName">tree_view</param>
+        <param name="id">${id}</param>
+        <param name="pid">${pid}</param>
+        <param name="level">${level}</param>
+      </result>
+      <result name="success" type="redirectAction">
+        <param name="actionName">tree_view</param>
+        <param name="id">${id}</param>
+        <param name="pid">${pid}</param>
+        <param name="level">${level}</param>
+      </result>
+    </action>
+
+    <action name="search" class="com.rental.treedvd.action.TreeViewAction"
+      method="searchItem">
+
+      <result name="success" type="redirectAction">
+        <param name="actionName">tree_view</param>
+        <param name="mes">${mes}</param>
+        <param name="imgPath">${imgPath}</param>
+        <param name="pathList">${pathList}</param>
+        <param name="id">${id}</param>
+        <param name="pid">${pid}</param>
+        <param name="level">${level}</param>
+      </result>
+    </action>
+
+    <!-- <result name="input">tree_view.jsp</result> -->
+
+  </package>
+</struts>

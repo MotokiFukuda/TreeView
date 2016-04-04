@@ -1,0 +1,125 @@
+/*鬩幢ｽ｢隴趣ｽ｢�ｽ�ｿ�ｽ�ｽ�ｽ蜿厄ｿｽ�ｽ�ｹ隴趣ｽ｢�ｽ�ｽ�ｽ�ｼ鬩幢ｽ｢隴寂或�ｾ�ｭ�ｽ螳茨ｽ､�ｼ�ｽ�ｹ隴趣ｽ｢�ｽ�ｽ�ｽ�ｼ鬯ｮ�ｯ�ｽ�ｦ�ｽ�ｽ�ｽ�ｨ鬯ｩ遨ゑｽｼ螟ｲ�ｽ�ｽ�ｽ�ｺ*/
+.display-list {
+	margin-left: 25px;
+	margin-bottom: 1em;
+}
+
+.blue {
+	color: #3136BF;
+}
+
+.ul-style {
+	list-style: none;
+	padding-left: 0;"
+}
+
+
+/*鬩幢ｽ｢隴趣ｽ｢�ｽ�ｿ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ鬩幢ｽ｢隴趣ｿｽﾂｧ�ｽ蜿冶ｾｨ陷肴圜�ｿ�ｽ�ｽ�ｨ鬯ｩ遨ゑｽｼ螟ｲ�ｽ�ｽ�ｽ�ｺ*/
+.table-title {
+	background-color: #91E0CA;
+}
+
+.productList-title {
+	background-color: azure;
+}
+
+.form-label {
+	padding: 0px 5px;
+	margin-top: 5px;
+	text-align: right;
+}
+
+.form-label-yen {
+	padding: 0px 5px;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.form-input {
+	padding: 0px 5px;
+}
+
+.form_file {
+	padding-top: 5px;
+}
+
+.file_left {
+	padding-left: 5px;
+}
+
+.file_change_label {
+	margin-top: 8px;
+}
+
+.change_file {
+	width: 96px;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.btn_update_c {
+	margin-right: 2em;
+}
+
+.btn_delete_c {
+	margin-left: 2em;
+}
+
+.btn_update {
+	margin-right: 1em;
+	margin-top: 33px;
+}
+
+.btn_delete {
+	margin-left: 1em;
+	margin-top: 33px;
+}
+
+.new-label {
+	padding-right:0px;
+	padding-top:5px;
+}
+
+.new-input-item {
+	padding-left:0px;
+	margin-bottom:5px;
+}
+
+.new-input-price {
+	padding-left:0px;
+	padding-right:10px
+}
+
+.new-input-yen {
+	padding-left:0px;
+	padding-top:5px;
+}
+
+.err {
+	color: red;
+	margin-top: 5px;
+	font-weight: bold;
+	list-style:none;
+	margin-bottom: 0px;
+}
+
+.err_msg {
+	margin-left: 30px;
+}
+
+.err_msg_n {
+	padding-left: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
